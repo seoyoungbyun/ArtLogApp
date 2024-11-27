@@ -15,7 +15,35 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // BottomNavigationView 초기화
+        val bottomNavigationView: BottomNavigationView = findViewById(R.id.bottom_navigation)
+        bottomNavigationView.setOnItemSelectedListener(this) // 리스너 설정
 
     }
 
+    override fun onNavigationItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.menu_home -> { // 홈 메뉴
+                val intent = Intent(this@MainActivity, )
+                startActivity(intent)
+                return false
+            }
+            R.id.menu_search -> { // 검색 메뉴
+                val intent = Intent(this@MainActivity, )
+                startActivity(intent)
+                return false
+            }
+            R.id.menu_storage -> { // 보관함 메뉴
+                val intent = Intent(this@MainActivity, )
+                startActivity(intent)
+                return false
+            }
+            R.id.menu_review -> { // 리뷰 메뉴
+                val intent = Intent(this@MainActivity, )
+                startActivity(intent)
+                return false
+            }
+        }
+        return false
+    }
 }

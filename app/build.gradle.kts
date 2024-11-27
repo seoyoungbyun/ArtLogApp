@@ -70,4 +70,6 @@ dependencies {
     implementation ("androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version")
     implementation ("androidx.lifecycle:lifecycle-common-java8:$lifecycle_version")
 
+    //bottom navigation
+    implementation ("androidx.core:core-ktx:1.0.2")
 }
