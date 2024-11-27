@@ -19,6 +19,8 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
         val bottomNavigationView: BottomNavigationView = findViewById(R.id.bottom_navigation)
         bottomNavigationView.setOnItemSelectedListener(this) // 리스너 설정
 
+        //actionBar title 변경
+        getSupportActionBar()?.setTitle("아트로그")
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
